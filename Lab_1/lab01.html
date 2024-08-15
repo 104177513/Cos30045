@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Meta tags for document information -->
+	<meta charset="UTF-8"/>
+	<meta name="description" content="Data Visualisation Exercise 1"/>
+	<meta name="keywords" content="HTML, CSS"/>
+	<meta name="author" content="Tran Hoang Hai Anh"/>
+	<title>Task 1.1 HTML and CSS Demo Page</title>
+	<!-- Linking to external stylesheet -->
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<!-- Heading section -->
+	<h1>Title of Article about Interesting Visualisation</h1>
+	<h2>Pets and the Pandemic</h2>
+	<!-- Main content -->
+	<p>
+		A <b>report</b> from <i>Animal Medicines Australia (AMA)</i> has found that many Australians took the opportunity to introduce a pet into their household during the pandemic. Their survey indicated that there was a significant increase in the percent of households taking in a new dog, fish or bird. Their research also indicated that pets had a number of positive influences on their lives such as:
+	</p>
+	<!-- Unordered list -->
+	<ul>
+		<li>companionship</li>
+		<li>better mental health</li>
+		<li>joy and happiness.</li>
+	</ul>
+	
+	<!-- Buttons for changing displayed image -->
+	<button onclick="changeImage('Images/Data_1.png', 'Fig 1. Comparison of Pet Ownership in 2019 and 2021.', 'data_1')">Both</button>
+	<button onclick="changeImage('Images/Data_2.png', 'Fig 2. Pet Ownership in 2019.', 'data_2')">2019</button>
+	<button onclick="changeImage('Images/Data_3.png', 'Fig 3. Pet Ownership in 2021.', 'data_3')">2021</button>
+
+	<!-- Container for the displayed image -->
+	<figure id="imageContainer">
+		<img id="displayedImage" src="Images/Data_1.png" alt="data_1">
+		<figcaption id="displayedCaption"><i>Fig 1. Comparison of Pet Ownership in 2019 and 2021.</i></figcaption>
+	</figure>
+
+	<!-- Linking to external script -->
+	<script src="script.js"></script>
+
+	<!-- Another figure with some images and captions -->
+	<figure>
+		<img src="pet_ownership_in_australia_table.png" alt="pet_ownership">
+		<figcaption>Fig 1. Comparison of Pet Ownership in 2019 and 2021. Data Source: <a href="https://animalmedicinesaustralia.org.au/wp-content/uploads/2021/08/AMAU005-PATP-Report21_v1.41_WEB.pdf">Animal Medicines Australia Report</a></figcaption>
+	</figure>
+	<figure>
+		<figcaption>A cute cat: </figcaption>
+		<img src="cat.jpg" alt="a_cat">
+	</figure>
+	<figure>
+		<figcaption>A cute dog: </figcaption>
+		<img src="dog.png" alt="a_dog">
+	</figure>
+	<figure>
+		<figcaption>A cute fish: </figcaption>
+		<img src="fish.jpg" alt="a_fish">
+	</figure>
+	
+	<!-- Additional text -->
+	<p>
+		With the increase in pet ownership the AMA are encouraging policy makers to consider the needs of companion animals and their owners when considering rental, strata and body corporate regulations are well as accepting animals in public places and transport.
+	</p>
+	<h2>Pet ownership statistics:</h2>
+	<!-- SVG for data visualization -->
+	<svg width="1500" height="500">
+		<g>
+			<!-- Rectangles representing data points -->
+			<rect x="90" y="110" width="90" height="500" style="fill:red;stroke-width:3;stroke:rgb(0,0,0)"></rect>
+			<rect x="240" y="160" width="90" height="500" style="fill:orange;stroke-width:3;stroke:rgb(0,0,0)"></rect>
+			<rect x="390" y="190" width="90" height="500" style="fill:yellow;stroke-width:3;stroke:rgb(0,0,0)"></rect>
+			<rect x="540" y="210" width="90" height="500" style="fill:green;stroke-width:3;stroke:rgb(0,0,0)"></rect>
+			<rect x="690" y="310" width="90" height="500" style="fill:blue;stroke-width:3;stroke:rgb(0,0,0)"></rect>
+			<rect x="840" y="410" width="90" height="500" style="fill:indigo;stroke-width:3;stroke:rgb(0,0,0)"></rect>
+			<rect x="990" y="460" width="90" height="500" style="fill:violet;stroke-width:3;stroke:rgb(0,0,0)"></rect>
+		</g>	
+	</svg>
+	
+	<!-- Footer section -->
+	<footer>COS30045 Data Visualisation</footer>
+</body>
+
+</html>

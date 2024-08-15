@@ -1,0 +1,83 @@
+/* Global styles for the entire document */
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f4f4f4;
+}
+
+/* Styling for main headings */
+h1 {
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Styling for subheadings */
+h2 {
+    color: #555;
+}
+
+/* Styling for paragraphs */
+p {
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Styling for bold text */
+b {
+    color: #0077cc;
+}
+
+/* Styling for italic text */
+i {
+    font-style: italic;
+}
+
+/* Styling for unordered lists */
+ul {
+    list-style-type: disc;
+    color: #888;
+}
+
+/* Styling for figure elements */
+figure {
+    margin: 20px 0;
+}
+
+/* Styling for images within figures */
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Styling for figure captions */
+figcaption {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Styling for hyperlinks */
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+/* Styling for the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Styling for buttons */
+button {
+    color: darkgreen;
+    background-color: lightsalmon;
+}

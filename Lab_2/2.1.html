@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set the character encoding and provide metadata for search engines -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Data Visualisation">
+    <meta name="keywords" content="HTML, CSS, D3">
+    <meta name="author" content="Tran Hoang Hai Anh">
+    <title>Task 2.1 D3 Data Binding</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+
+</head>
+<body>
+    <h1>The D3 Journey starts here...</h1>
+    <script>
+        // d3.select("body")
+        // .append("p")
+        // .text("New Paragraph !");
+        var dataset = [14, 5, 26, 23, 9]
+        // d3.select("body").selectAll("p").data(dataset).enter().append("p").text("New Paragraph");
+        // Bind data to paragraphs, set text based on data value, and apply color based on a condition 
+        d3.select("body").selectAll("p").data(dataset).enter().append("p").text(function(d){
+            if(d > 10){
+                this.style.color = "red"
+                return "Warning: Joe watched " + d + " cat videos today."
+            }
+            else{
+                return "Joe watched " + d + " cat videos today."
+            }
+        }); 
+    </script>
+</body>
+<footer>COS30045 Data Visualisation</footer>
+</html>

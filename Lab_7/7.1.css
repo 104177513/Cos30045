@@ -1,0 +1,13 @@
+.line {
+    fill: none;
+    stroke: slategrey;
+    stroke-width:  0.5;
+}
+.halfLine{
+    stroke: red;
+    stroke-width: 0.5;
+    stroke-dasharray: 5;
+}
+.path{
+    fill: slategray;
+}
